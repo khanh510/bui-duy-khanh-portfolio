@@ -86,7 +86,7 @@ Copy the example environment file if you want to configure the production origin
 cp .env.example .env.local
 ```
 
-Set `NEXT_PUBLIC_SITE_URL` to the final domain, without a trailing slash. This single value controls canonical, Open Graph, sitemap, and robots URLs. On Vercel, add the same variable in **Project Settings → Environment Variables**.
+Set `NEXT_PUBLIC_SITE_URL` to the final custom domain, without a trailing slash. This single value controls canonical, Open Graph, sitemap, and robots URLs. It is optional on Vercel because the platform production URL is detected automatically; add the variable in **Project Settings → Environment Variables** when using a custom domain.
 
 Default title, description, keywords, author, Open Graph, and Twitter metadata live in `src/app/layout.tsx`. The generated sharing image is in `src/app/opengraph-image.tsx`.
 
@@ -95,7 +95,7 @@ Default title, description, keywords, author, Open Graph, and Twitter metadata l
 1. Push this repository to GitHub.
 2. In Vercel, select **Add New → Project**.
 3. Import the GitHub repository.
-4. Add `NEXT_PUBLIC_SITE_URL` with the final Vercel or custom domain.
+4. Optionally add `NEXT_PUBLIC_SITE_URL` when using a custom domain.
 5. Keep the detected **Next.js** framework preset and default build settings.
 6. Select **Deploy**.
 
