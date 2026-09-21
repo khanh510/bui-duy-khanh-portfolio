@@ -28,8 +28,8 @@ export const profile = {
 
 export const socialLinks: SocialLink[] = [
   { label: "Email", href: `mailto:${profile.email}`, handle: profile.email },
-  // TODO: Add the real profile URLs below. Undefined links render as setup reminders, not broken anchors.
-  { label: "GitHub" },
+  { label: "GitHub", href: "https://github.com/khanh510", handle: "github.com/khanh510" },
+  // TODO: Add the remaining real profile URLs below. Undefined links render as setup reminders, not broken anchors.
   { label: "LinkedIn" },
   { label: "Upwork" },
   { label: "Freelancer.com" },
