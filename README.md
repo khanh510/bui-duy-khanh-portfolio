@@ -103,7 +103,7 @@ No `vercel.json`, database, secret, or paid third-party service is required.
 
 ## Remaining content TODOs
 
-- Add LinkedIn, Upwork, and Freelancer.com URLs in `src/data/profile.ts`.
+- Add Upwork and Freelancer.com URLs in `src/data/profile.ts`.
 - Replace the placeholder production origin with the final site URL.
 - Add public demo or source links where organization policy permits.
 - Add the RS485/device and camera-monitoring projects after confirming scope and disclosure details.
