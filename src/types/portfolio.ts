@@ -15,6 +15,11 @@ export type ExperienceItem = {
 
 export type ProjectStatus = "Production" | "Maintained" | "Delivered" | "Internal";
 
+export type ProjectLink = {
+  label: string;
+  href: string;
+};
+
 export type Project = {
   name: string;
   eyebrow: string;
@@ -24,6 +29,7 @@ export type Project = {
   technologies: string[];
   features: string[];
   status: ProjectStatus;
+  links?: ProjectLink[];
   demoUrl?: string;
   githubUrl?: string;
   image?: { src: string; alt: string };

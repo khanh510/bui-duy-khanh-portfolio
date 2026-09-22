@@ -84,6 +84,14 @@ export default function ResumePage() {
                       {project.responsibilities.slice(0, 2).map((item) => <li key={item}>{item}</li>)}
                     </ul>
                     <p className="resume-tech-line">{project.technologies.join(" · ")}</p>
+                    {(project.links?.length ?? 0) > 0 || project.demoUrl ? (
+                      <p className="resume-project-links">
+                        {project.links?.map((link) => (
+                          <a href={link.href} key={link.href} target="_blank" rel="noreferrer">{link.label}</a>
+                        ))}
+                        {project.demoUrl ? <a href={project.demoUrl} target="_blank" rel="noreferrer">Live product</a> : null}
+                      </p>
+                    ) : null}
                   </article>
                 ))}
               </div>

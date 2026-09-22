@@ -14,8 +14,8 @@ export const projects: Project[] = [
     technologies: ["Laravel 10", "MySQL", "Redis", "Horizon", "Scout", "OpenAI API"],
     features: ["Multi-channel email", "Queue workers", "Role and policy checks", "AI summaries and FAQ generation"],
     status: "Production",
+    links: [{ label: "ThimPress Help Forum", href: "https://help.thimpress.com/" }],
     sourcePrivate: true,
-    // TODO: Add a public product/demo URL if one becomes available.
   },
   {
     name: "LearnPress & Eduma",
@@ -30,6 +30,11 @@ export const projects: Project[] = [
     technologies: ["PHP 8", "WordPress", "LearnPress", "MySQL", "REST API", "OpenAI", "MCP"],
     features: ["Backward compatibility", "Custom database tables", "Scoped API keys", "Recurring subscriptions"],
     status: "Maintained",
+    links: [
+      { label: "LearnPress LMS", href: "https://learnpresslms.com/" },
+      { label: "Eduma Demo", href: "https://eduma.thimpress.com/" },
+      { label: "LearnPress Add-ons", href: "https://learnpresslms.com/add-ons/" },
+    ],
     sourcePrivate: true,
   },
   {
@@ -60,6 +65,7 @@ export const projects: Project[] = [
     technologies: ["WordPress", "WooCommerce", "PHP", "MySQL", "Gutenberg", "Elementor"],
     features: ["Flexible departures", "Group pricing", "Booking validation", "WPML and Polylang support"],
     status: "Maintained",
+    links: [{ label: "TravelWP Demo", href: "https://travelwp.physcode.com/" }],
     sourcePrivate: true,
   },
   {
@@ -91,8 +97,8 @@ export const projects: Project[] = [
     technologies: ["TypeScript", "NestJS", "Prisma", "PostgreSQL", "Redis", "Kafka", "TimescaleDB", "Docker"],
     features: ["NestJS API service", "Prisma data layer", "Redis and Kafka infrastructure", "Docker-based local services"],
     status: "Internal",
+    links: [{ label: "TSAR Link", href: "https://tsarlink.ai/" }],
     sourcePrivate: true,
-    // TODO: Add a public project URL or approved case-study details when available.
   },
 ];
 

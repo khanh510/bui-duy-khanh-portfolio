@@ -37,8 +37,11 @@ export function Projects() {
                     {project.features.map((item) => <li className="feature-row" key={item}>{item}</li>)}
                   </ul>
                   <div className="mt-6"><TagList items={project.technologies} /></div>
-                  {project.demoUrl || project.githubUrl ? (
-                    <div className="mt-6 flex gap-4 font-mono text-sm">
+                  {(project.links?.length ?? 0) > 0 || project.demoUrl || project.githubUrl ? (
+                    <div className="mt-6 flex flex-wrap gap-x-4 gap-y-2 font-mono text-sm">
+                      {project.links?.map((link) => (
+                        <a className="text-link" href={link.href} key={link.href} target="_blank" rel="noreferrer">{link.label} ↗</a>
+                      ))}
                       {project.demoUrl ? <a className="text-link" href={project.demoUrl} target="_blank" rel="noreferrer">View demo ↗</a> : null}
                       {project.githubUrl ? <a className="text-link" href={project.githubUrl} target="_blank" rel="noreferrer">Source ↗</a> : null}
                     </div>

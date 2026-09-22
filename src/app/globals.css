@@ -252,6 +252,8 @@ a.contact-link:hover { color: var(--accent); padding-inline: 0.25rem; }
 .resume-entry li::before,
 .resume-sidebar li::before { position: absolute; left: 0; color: var(--accent); content: "—"; }
 .resume-tech-line { margin-top: 0.75rem; color: var(--muted); font-family: var(--font-geist-mono); font-size: 0.69rem; line-height: 1.55; }
+.resume-project-links { display: flex; flex-wrap: wrap; gap: 0.35rem 0.8rem; margin-top: 0.55rem; font-size: 0.72rem; }
+.resume-project-links a { color: var(--accent-strong); text-decoration: underline; text-decoration-color: var(--border); text-underline-offset: 0.18rem; }
 .resume-sidebar { border-left: 1px solid var(--border); padding-left: clamp(1.5rem, 3vw, 2.5rem); }
 .resume-skill-groups { display: grid; gap: 1.25rem; }
 .resume-skill-groups h3 { margin-bottom: 0.35rem; font-size: 0.85rem; font-weight: 700; }
