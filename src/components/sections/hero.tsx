@@ -1,8 +1,8 @@
 import { Container } from "@/components/ui/container";
 import { profile } from "@/data/profile";
 
-const primaryStack = ["PHP", "Laravel", "REST API", "MySQL", "Redis", "Docker", "WordPress"];
-const expandingStack = ["Java", "Spring Boot", "Kafka", "Microservices"];
+const featuredProjectStack = ["Java", "Spring Boot", "TypeScript", "NestJS", "React", "Kafka", "Docker"];
+const establishedStack = ["PHP", "Laravel", "REST API", "MySQL", "Redis", "WordPress"];
 
 export function Hero() {
   return (
@@ -39,12 +39,12 @@ export function Hero() {
                 <dd className="mt-2 text-lg font-medium leading-7 text-[var(--heading)]">Backend logic, APIs, payments, integrations, production maintenance</dd>
               </div>
               <div>
-                <dt className="data-label">Core stack</dt>
-                <dd className="mt-3 flex flex-wrap gap-2">{primaryStack.map((item) => <span className="tech-chip" key={item}>{item}</span>)}</dd>
+                <dt className="data-label">Featured project stack</dt>
+                <dd className="mt-3 flex flex-wrap gap-2">{featuredProjectStack.map((item) => <span className="tech-chip" key={item}>{item}</span>)}</dd>
               </div>
               <div>
-                <dt className="data-label">Expanding into</dt>
-                <dd className="mt-3 flex flex-wrap gap-2">{expandingStack.map((item) => <span className="tech-chip tech-chip-muted" key={item}>{item}</span>)}</dd>
+                <dt className="data-label">Established backend stack</dt>
+                <dd className="mt-3 flex flex-wrap gap-2">{establishedStack.map((item) => <span className="tech-chip tech-chip-muted" key={item}>{item}</span>)}</dd>
               </div>
             </dl>
             <p className="mt-8 border-t border-[var(--border)] pt-5 text-sm leading-6 text-[var(--muted)]">{profile.availability}</p>

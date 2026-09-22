@@ -12,6 +12,7 @@ export const experience: ExperienceItem[] = [
       "Developed and maintained WordPress and LearnPress features, including custom data models, REST APIs, GDPR flows, subscriptions, and backward-compatible OOP refactors.",
       "Delivered booking and event workflows and more than ten payment gateway integrations using REST APIs and webhooks.",
       "Contributed to a Spring Boot service-booking backend using JPA, Spring Security, Redis, MQTT, and AWS deployment tooling.",
+      "Contributed to a TypeScript/NestJS platform with a React/Next.js dashboard, Prisma, PostgreSQL, Redis, Kafka, TimescaleDB, and Docker.",
     ],
     technologies: [
       "PHP",

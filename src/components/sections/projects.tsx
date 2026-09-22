@@ -10,7 +10,7 @@ export function Projects() {
         <SectionHeading index="01 / SELECTED WORK" title="Systems defined by real operational requirements." description="Selected product and integration work. Most production source is held in organization-owned private repositories." />
         <div className="grid gap-5 lg:grid-cols-2">
           {projects.map((project, index) => (
-            <article key={project.name} className={`project-card ${index === 0 ? "lg:col-span-2" : ""}`}>
+            <article key={project.name} className={`project-card ${index < 2 ? "lg:col-span-2" : ""}`}>
               <div className="flex flex-wrap items-start justify-between gap-4">
                 <div>
                   <p className="font-mono text-xs uppercase tracking-[0.16em] text-[var(--accent)]">0{index + 1} / {project.eyebrow}</p>
@@ -22,7 +22,7 @@ export function Projects() {
                 </div>
               </div>
               <p className="mt-5 max-w-3xl text-base leading-7 text-[var(--muted-strong)]">{project.description}</p>
-              <div className={`mt-8 grid gap-8 ${index === 0 ? "md:grid-cols-2" : ""}`}>
+              <div className={`mt-8 grid gap-8 ${index < 2 ? "md:grid-cols-2" : ""}`}>
                 <div>
                   <p className="data-label">Requirement</p>
                   <p className="mt-2 text-sm leading-6 text-[var(--muted)]">{project.problem}</p>

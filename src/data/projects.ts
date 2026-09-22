@@ -1,6 +1,6 @@
 import type { Project } from "@/types/portfolio";
 
-export const projects: Project[] = [
+const projectItems: Project[] = [
   {
     name: "ThimPress Help",
     eyebrow: "Support operations platform",
@@ -94,13 +94,22 @@ export const projects: Project[] = [
       "Worked with API service modules and supporting development infrastructure",
       "Kept implementation details and source access private",
     ],
-    technologies: ["TypeScript", "NestJS", "Prisma", "PostgreSQL", "Redis", "Kafka", "TimescaleDB", "Docker"],
-    features: ["NestJS API service", "Prisma data layer", "Redis and Kafka infrastructure", "Docker-based local services"],
+    technologies: ["TypeScript", "NestJS", "React", "Next.js", "Prisma", "PostgreSQL", "Redis", "Kafka", "TimescaleDB", "Docker"],
+    features: ["NestJS API service", "React/Next.js dashboard", "Redis and Kafka infrastructure", "Docker-based local services"],
     status: "Internal",
     links: [{ label: "TSAR Link", href: "https://tsarlink.ai/" }],
     sourcePrivate: true,
   },
 ];
+
+const projectPriority = new Map([
+  ["Washbank", 1],
+  ["TSAR Stock Exchange", 2],
+]);
+
+export const projects = [...projectItems].sort(
+  (first, second) => (projectPriority.get(first.name) ?? Number.MAX_SAFE_INTEGER) - (projectPriority.get(second.name) ?? Number.MAX_SAFE_INTEGER),
+);
 
 // TODO: Add the Windows/RS485 device integration and camera monitoring projects
 // once scope, responsibilities, technologies, and disclosure permissions are confirmed.

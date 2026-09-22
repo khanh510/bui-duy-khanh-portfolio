@@ -7,12 +7,12 @@ export const profile = {
   location: "Hanoi, Vietnam",
   email: "khanh510.dk@gmail.com",
   summary:
-    "Backend developer building production web systems, REST APIs, payment flows, and third-party integrations with PHP, Laravel, and database-backed architectures.",
+    "Backend developer with recent Java/Spring Boot and TypeScript/NestJS project work, backed by production experience in PHP, Laravel, REST APIs, payments, and third-party integrations.",
   intro:
     "I build and maintain backend systems where business rules, data integrity, integrations, and long-term compatibility matter.",
   about: [
     "My professional work centers on PHP, Laravel, and WordPress products: designing business logic, REST APIs, database-backed workflows, background jobs, payment integrations, and connections to third-party services.",
-    "I am comfortable working inside mature production codebases—debugging behavior, improving query performance, and evolving architecture without breaking existing users. I am also expanding my backend stack through Java and Spring Boot, with continued work around Redis, messaging, containers, and service-oriented systems.",
+    "I am comfortable working inside mature production codebases—debugging behavior, improving query performance, and evolving architecture without breaking existing users. Recent projects have extended my stack into Java/Spring Boot and TypeScript/NestJS systems using React, Redis, Kafka, MQTT, TimescaleDB, Docker, and service-oriented patterns.",
   ],
   availability: "Open to backend and backend-leaning full-stack opportunities",
   cvPath: "/resume",
