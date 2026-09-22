@@ -70,13 +70,9 @@ Project cards support descriptions, business requirements, responsibilities, tec
 
 ## CV
 
-Place the current PDF at:
+The CV is rendered as a responsive HTML page at `/resume`. Its content is assembled from the same profile, experience, project, and skill data used by the portfolio, so updates stay in sync.
 
-```text
-public/cv/Bui-Duy-Khanh-CV.pdf
-```
-
-The current CV is already present. If the file is removed, the site still builds, but the download link will return a missing-file response until it is replaced.
+Use the **Print / Save as PDF** action on that page when a PDF copy is needed. Print-specific styles format the page for A4 without relying on a committed PDF file.
 
 ## Site URL and metadata
 

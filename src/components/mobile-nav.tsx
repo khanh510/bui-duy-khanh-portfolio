@@ -40,7 +40,7 @@ export function MobileNav({ navigation, socialLinks, cvPath }: MobileNavProps) {
                 <span key={link.label} className="button-disabled" title={`TODO: Add ${link.label} URL`}>{link.label}</span>
               ),
             )}
-            <a className="button-primary col-span-2" href={cvPath} download>Download CV</a>
+            <a className="button-primary col-span-2" href={cvPath} onClick={() => setOpen(false)}>View CV</a>
           </div>
         </div>
       ) : null}

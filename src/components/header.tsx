@@ -26,7 +26,7 @@ export function Header() {
               ) : (
                 <span key={link.label} className="header-text-link cursor-help opacity-45" title={`TODO: Add ${link.label} URL`}>{link.label}</span>
               ))}
-              <a className="header-cv-link" href={profile.cvPath} download>Download CV</a>
+              <a className="header-cv-link" href={profile.cvPath}>View CV</a>
             </div>
             <ThemeToggle />
             <MobileNav navigation={profile.navigation} socialLinks={socialLinks} cvPath={profile.cvPath} />

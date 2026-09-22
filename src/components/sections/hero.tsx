@@ -23,7 +23,7 @@ export function Hero() {
             <p className="mt-8 max-w-2xl text-lg leading-8 text-[var(--muted-strong)] sm:text-xl sm:leading-9">{profile.intro}</p>
             <div className="mt-9 flex flex-col gap-3 sm:flex-row">
               <a className="button-primary" href="#projects">View projects <span aria-hidden="true">↓</span></a>
-              <a className="button-secondary" href={profile.cvPath} download>Download CV</a>
+              <a className="button-secondary" href={profile.cvPath}>View HTML CV</a>
               <a className="button-quiet" href="#contact">Contact me <span aria-hidden="true">↗</span></a>
             </div>
           </div>

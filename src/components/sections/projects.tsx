@@ -7,7 +7,7 @@ export function Projects() {
   return (
     <section id="projects" className="section-block scroll-mt-24">
       <Container>
-        <SectionHeading index="03 / SELECTED WORK" title="Systems defined by real operational requirements." description="Selected product and integration work. Most production source is held in organization-owned private repositories." />
+        <SectionHeading index="01 / SELECTED WORK" title="Systems defined by real operational requirements." description="Selected product and integration work. Most production source is held in organization-owned private repositories." />
         <div className="grid gap-5 lg:grid-cols-2">
           {projects.map((project, index) => (
             <article key={project.name} className={`project-card ${index === 0 ? "lg:col-span-2" : ""}`}>

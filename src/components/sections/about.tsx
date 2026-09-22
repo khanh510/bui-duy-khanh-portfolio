@@ -12,7 +12,7 @@ export function About() {
   return (
     <section id="about" className="section-block scroll-mt-24">
       <Container>
-        <SectionHeading index="01 / ABOUT" title="Backend work grounded in product constraints." description="A practical engineering profile centered on the systems behind web products." />
+        <SectionHeading index="03 / ABOUT" title="Backend work grounded in product constraints." description="A practical engineering profile centered on the systems behind web products." />
         <div className="grid gap-10 md:grid-cols-[minmax(0,1.1fr)_minmax(18rem,.9fr)] md:gap-16">
           <div className="space-y-5 text-lg leading-8 text-[var(--muted-strong)]">
             {profile.about.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
