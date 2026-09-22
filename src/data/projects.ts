@@ -78,6 +78,22 @@ export const projects: Project[] = [
     demoUrl: "https://washbank.co.kr/",
     sourcePrivate: true,
   },
+  {
+    name: "TSAR Stock Exchange",
+    eyebrow: "Internal trading platform",
+    description: "A company project built as a TypeScript monorepo with a NestJS API service and web dashboard. Public product details are intentionally limited.",
+    problem: "The platform needs an API-first backend foundation with reliable data services and supporting event infrastructure.",
+    responsibilities: [
+      "Contributed to backend development in an organization-owned codebase",
+      "Worked with API service modules and supporting development infrastructure",
+      "Kept implementation details and source access private",
+    ],
+    technologies: ["TypeScript", "NestJS", "Prisma", "PostgreSQL", "Redis", "Kafka", "TimescaleDB", "Docker"],
+    features: ["NestJS API service", "Prisma data layer", "Redis and Kafka infrastructure", "Docker-based local services"],
+    status: "Internal",
+    sourcePrivate: true,
+    // TODO: Add a public project URL or approved case-study details when available.
+  },
 ];
 
 // TODO: Add the Windows/RS485 device integration and camera monitoring projects

@@ -13,7 +13,7 @@ export type ExperienceItem = {
   technologies: string[];
 };
 
-export type ProjectStatus = "Production" | "Maintained" | "Delivered";
+export type ProjectStatus = "Production" | "Maintained" | "Delivered" | "Internal";
 
 export type Project = {
   name: string;
