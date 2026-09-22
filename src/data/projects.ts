@@ -75,8 +75,8 @@ export const projects: Project[] = [
     technologies: ["Java", "Spring Boot", "JPA", "Spring Security", "Redis", "MQTT", "AWS"],
     features: ["Authenticated APIs", "Redis caching", "MQTT messaging", "AWS deployment"],
     status: "Delivered",
+    demoUrl: "https://washbank.co.kr/",
     sourcePrivate: true,
-    // TODO: Add a public case-study or demo link if sharing is permitted.
   },
 ];
 
