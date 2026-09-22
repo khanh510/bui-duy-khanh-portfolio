@@ -1,8 +1,8 @@
 import { Container } from "@/components/ui/container";
 import { profile } from "@/data/profile";
 
-const primaryStack = ["PHP", "Laravel", "WordPress", "REST API"];
-const expandingStack = ["Java", "Spring Boot", "Microservices"];
+const primaryStack = ["PHP", "Laravel", "REST API", "MySQL", "Redis", "Docker", "WordPress"];
+const expandingStack = ["Java", "Spring Boot", "Kafka", "Microservices"];
 
 export function Hero() {
   return (

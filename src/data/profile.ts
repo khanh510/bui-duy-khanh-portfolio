@@ -7,7 +7,7 @@ export const profile = {
   location: "Hanoi, Vietnam",
   email: "khanh510.dk@gmail.com",
   summary:
-    "Backend developer building production web systems, REST APIs, payment flows, and third-party integrations with PHP, Laravel, and WordPress.",
+    "Backend developer building production web systems, REST APIs, payment flows, and third-party integrations with PHP, Laravel, and database-backed architectures.",
   intro:
     "I build and maintain backend systems where business rules, data integrity, integrations, and long-term compatibility matter.",
   about: [
